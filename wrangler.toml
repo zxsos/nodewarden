@@ -2,6 +2,13 @@ name = "nodewarden"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
 
+# WebAuthn / Passkey 配置（非敏感，仅域名相关，公开无妨）
+# 写在这里防止 Cloudflare GitHub 构建时覆盖丢弃
+[vars]
+WEBAUTHN_RP_ID = "bitwarden.zxsos.ccwu.cc"
+WEBAUTHN_RP_NAME = "NodeWarden"
+WEBAUTHN_ALLOWED_ORIGINS = "https://bitwarden.zxsos.ccwu.cc"
+
 [build]
 command = "npm run build"
 
