@@ -20,6 +20,7 @@
     "i18n:validate": "node scripts/i18n-validate.cjs",
     "test:config-compatibility": "tsx --test scripts/config-compatibility.test.ts",
     "test:vault-compatibility": "tsx --tsconfig webapp/tsconfig.json --import ./scripts/offline-workers-loader.mjs --test scripts/vault-compatibility.test.ts",
+    "test:folder-tree": "tsx --test scripts/folder-tree.test.ts",
     "test:web-crypto": "tsx --test scripts/web-crypto-availability.test.ts",
     "test:notifications-security": "tsx --test scripts/notifications-security.test.ts",
     "test:webauthn-mobile": "node --test scripts/webauthn-mobile-connector.test.mjs",
@@ -54,7 +55,7 @@
   },
   "overrides": {
     "nanoid": "3.3.18",
-    "undici": "8.10.2",
+    "undici": "8.12.2",
     "@babel/core": ">=7.29.6",
     "esbuild": ">=0.28.1",
     "ws": "8.21.0",
